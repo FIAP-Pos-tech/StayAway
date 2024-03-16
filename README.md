@@ -5,6 +5,36 @@ Plataforma de Hotelaria e Hospitalidade
 
 ## Requisições em Curl
 
+### Serviço de Clientes e Autenticação
+
+POST
+register customer
+---
+
+Registra novo cliente.
+
+```curl
+curl --location 'localhost:8083/api/auth/register/customer' \
+--data '{
+    "name": "Enrico",
+    "email": "enrico@email.com",
+    "password": "2024-01-28"
+}'
+```
+
+POST
+login
+---
+
+Login na plataforma.
+
+```curl
+curl --location 'localhost:8083/api/auth/register/customer' \
+--data '{
+    "email": "enrico@email.com",
+    "password": "2024-01-28"
+}'
+```
 
 ### Serviço de Reserva
 
