@@ -36,6 +36,129 @@ curl --location 'localhost:8083/api/auth/register/customer' \
 }'
 ```
 
+### Serviço de Hóteis
+
+POST
+POST hotel
+---
+
+Cadastro de hótel.
+
+```curl
+curl --location 'localhost:8081/api/hotel' \
+--data '{
+    "nome" : "hotel-2",
+    "endereco" : "Rua Hotel",
+    "numero" : "123",
+    "cep" : "12345-100",    
+    "cidade" : "sao paulo",
+    "estado" : "SP",
+    "pais" : "Brasil"
+}'
+```
+
+GET
+GET hotels
+---
+
+Lista hóteis.
+
+```curl
+curl --location 'localhost:8081/api/hotel'
+
+```
+
+POST
+POST quarto
+---
+
+Cadastro de Quarto.
+
+```curl
+curl --location 'localhost:8081/api/quarto/65f5b585b59250215279e3e9' \
+--data '{
+    "tipo" : "PREMIUM",
+    "quantidade" : 5,
+    "totalPessoas" : 50
+}'
+```
+
+GET
+GET quartos
+---
+
+Lista quartos.
+
+```curl
+curl --location 'localhost:8081/api/quarto'
+```
+
+DELETE
+DEL quarto by id
+---
+
+Remove quarto.
+
+```curl
+curl --location --request DELETE 'localhost:8081/api/quarto?Id=65f5b75d05b36f6c27fd102b'
+```
+
+POST
+POST adicional
+---
+
+Cadastra adicionais.
+
+```curl
+curl --location --request POST 'localhost:8081/api/adicional' \
+--data '{
+    "tipo" : "ITEM",
+    "valor" : 10.9,
+    "quantidade" : 3,
+    "obs" : "Cerveja Invicta produzida em RP",
+    "hotelId" : "65f59af3ee74d63c155fd560"
+}'
+```
+
+DELETE
+DEL adicional
+---
+
+Remove cadastro de adicional.
+
+```curl
+curl --location --request DELETE 'localhost:8081/api/adicional?id=65f5a52eb59250215279e3d3'
+```
+
+POST
+POST ListaIdQuantidade
+---
+
+```curl
+curl --location --request POST 'localhost:8081/api/adicional/lista' \
+--data '[
+    {
+        "id" : "65f5a4f7acdc16345ec7450e",
+        "quantidade" : 200
+    },
+    {
+        "id" : "65f5bde3575c6e4045bbc40b",
+        "quantidade" : 12
+    }
+]'
+```
+
+GET
+GET adicional
+---
+
+Lista adicionais.
+
+```curl
+curl --location 'localhost:8081/api/adicional'
+```
+
+
 ### Serviço de Reserva
 
 POST 
