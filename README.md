@@ -3,7 +3,11 @@
 Plataforma de Hotelaria e Hospitalidade
 
 
-## Requisições em Curl
+## Requisições
+
+Endereço da coleção de requisições no Postman: https://documenter.getpostman.com/view/28287436/2sA2xnxA7G
+
+## Requisiçõem em Curl
 
 ### Serviço de Clientes e Autenticação
 
