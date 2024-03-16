@@ -1,0 +1,9 @@
+[submodule "stay-booking"]
+	path = stay-booking
+	url = https://github.com/FIAP-Pos-tech/stay-booking.git
+[submodule "stay-hotel"]
+	path = stay-hotel
+	url = https://github.com/FIAP-Pos-tech/stay-hotel.git
+[submodule "stay-auth"]
+	path = stay-auth
+	url = https://github.com/FIAP-Pos-tech/stay-auth.git
