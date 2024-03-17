@@ -2,6 +2,18 @@
 
 Plataforma de Hotelaria e Hospitalidade
 
+## Como rodar a aplicação
+
+Executar o seguinte comando a partir da raiz do projeto:
+
+```bash
+docker compose up
+```
+
+## Vídeo de funcionalidade
+
+https://youtu.be/G-TTvIoELRg
+
 
 ## Requisições
 
